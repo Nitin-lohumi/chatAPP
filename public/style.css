@@ -36,19 +36,12 @@ to{
     display:  flex;
     align-items: center;
 }
-/* .brand img{
-    padding:20px;
-    margin-right: 10px;
-    border-radius: 50%;
-    height:5vh;
-    width:5vh;
-    border: 1px solid rgb(115, 115, 115);
-} */
 .brand h1{
  text-transform: uppercase;
  font-size: 20px;
  color: rgb(0, 0, 0);
  font-weight: 900;
+
 }
 .massage_area{
     height: 370px;
@@ -122,3 +115,13 @@ p{
     border-radius: 1rem;
     padding-left:30px;
 }
+
+.time{
+    margin-left:40%; 
+    color:rgb(33, 254, 8);
+    font-size: 1.4vw; 
+    font-weight: 800;
+     text-transform:capitalize; 
+     letter-spacing: 1px;
+}
+ 
