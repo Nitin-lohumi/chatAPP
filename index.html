@@ -35,12 +35,43 @@
         margin: 0px;
         padding: 10px;
         margin-bottom: 10px;
+        font-size: 1rem;
   }
+  .massage_area .outgoing h2{
+    border:0px solid rgb(241, 236, 236);
+    display:inline-block;
+    padding:5px 10px;
+    font-size: 20px;
+}
+.massage_area .outgoing p{
+    border:2px solid rgb(216, 216, 219);
+    display:inline-block;
+    margin-right:10px;
+    margin-top:15px;
+    height: fit-content;
+    width:90%;
+    word-wrap: break-word;
+    padding:10px 5px;
+}
+p{
+    border:2px solid  rgb(52, 91, 29);
+    display:inline-block;
+    width:90%;
+    color:rgb(31, 30, 29);
+    word-wrap: break-word;
+    padding:10px 5px;
+    margin-left: 0px;
+    font-size: 1rem;
+    margin-top:0px;
+}
+h2{
+    font-size:1.2rem;
+}
 }
 
 @media (min-width: 200px) and (max-width: 400px){
     .massage_area {
-        height: 410px;
+        height: 420px;
         padding: .7rem;
     }
     .textarea{
@@ -48,6 +79,7 @@
         margin: 0px;
         padding: 10px;
         margin-bottom: 10px;
+        font-size: 1rem;    
   }
   .brand{
     padding:10px;
@@ -58,33 +90,82 @@
 .time{
         font-size: 4vw; 
     }
-    .box{
-            margin-top:40px;
-        }
 
+.box{
+            margin-top:40px;
+}
+
+.massage_area .outgoing h2{
+    border:0px solid rgb(241, 236, 236);
+    display:inline-block;
+    padding:5px 10px;
+    font-size: 16px;
+}
+.massage_area .outgoing p{
+    border:1px solid rgb(216, 216, 219);
+    display:inline-block;
+    margin-right:0px;
+    margin-top:0px;
+    height: fit-content;
+    width:80%;
+    word-wrap: break-word;
+    padding:5px;
+}
+p{
+    border:1px solid  rgb(52, 91, 29);
+    display:inline-block;
+    width:80%;
+    color:rgb(31, 30, 29);
+    word-wrap: break-word;
+    padding:5px;
+    margin-left: 0px;
+    font-size:14px;
+    margin-top:0px;
+}
+h2{
+    font-size:1rem;
+}
 }
 
 
 
     </style>
 </head>
-<body>
+<body onload="myTime()">
 <div class="box">
    <section class="chat_section">
     <div class="brand">
         <!-- <img src="img.png"> -->
         <h1 style="color:rgb(41, 178, 251);">Welcome <span  style="color: white; font-size:1.7rem; padding: 0 10px" id="header">nitin</span> let's chat like a coder</h1>
-        <span style="margin-left: 40%;" class="time" id="show_time">10:101:@292</span>
+        <span style="margin-left: 40%;" class="time" id="show_time">Time</span>
     </div>
     <div class="massage_area">  
         <div class="incoming message">  
-            <h2 style="color:green"></h2> 
-            <p id="msg1" style="color:rgb(255, 250, 250)"></p>
+            <h2 style="color:green">bjvkvhk</h2> 
+            <p id="msg1" style="color:rgb(255, 250, 250)">dscsddsdscdcsdcdscdscdscdscdscdsscdscdscdscdscdscdscdscdscdsc</p>
        </div> 
         <div class="outgoing message"> 
-            <h2></h2>
-            <p id="msg2"></p>
+            <h2>nitin</h2>
+            <p id="msg2">Lorem ipsum dolor sit amet consectetur adipisicing </p>
         </div>
+      
+        <div class="incoming message">  
+            <h2 style="color:green">heey</h2> 
+            <p id="msg1" style="color:rgb(255, 250, 250)">dbjbsdjbks</p>
+       </div> 
+        <div class="outgoing message"> 
+            <h2>nitin</h2>
+            <p id="msg2">jsdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd4 </p>
+        </div>
+        <div class="incoming message">  
+            <h2 style="color:green">sdcs</h2> 
+            <p id="msg1" style="color:rgb(255, 250, 250)">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet odio facilis quod voluptates provident officia beatae sequi, doloribus ipsa architecto reiciendis tenetur optio expedita eaque velit nemo nesciunt non minima.</p>
+       </div> 
+        <div class="outgoing message"> 
+            <h2>nitin</h2>
+            <p id="msg2">Loret consectetur adipisicing </p>
+        </div>
+
 
     </div>
     <input type="text" class="textarea" placeholder="Send a Message" id="textarea">
