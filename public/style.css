@@ -62,23 +62,22 @@ to{
     border:0px solid rgb(241, 236, 236);
     position:relative;
     height:auto;
+    display:flex;
+    flex-direction:column;
 }
 .massage_area .outgoing h2{
     border:0px solid rgb(241, 236, 236);
     display:inline-block;
-    float:right;
     padding:5px 10px;
 }
 .massage_area .outgoing p{
     border:0px solid rgb(241, 236, 236);
     display:inline-block;
-    margin-right:10px;
-    margin-top:17px;
+    margin-top:0;
     height: fit-content;
-    float:right;
-    width:50%;
     word-wrap: break-word;
-}
+    width:80%;
+}   
 h2{
     color:blue;
     text-transform: uppercase;
@@ -89,7 +88,7 @@ h2{
 p{
     border:0px solid  white;
     display:inline-block;
-    width:50%;
+    width:80%;
     height: auto;
     color: rgb(3, 18, 1);
     color:white;
