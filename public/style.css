@@ -70,12 +70,14 @@ to{
     padding:5px 10px;
 }
 .massage_area .outgoing p{
-    border:0px solid rgb(241, 236, 236);
+    border:1px solid rgb(241, 236, 236);
     display:inline-block;
     margin-right:10px;
     margin-top:17px;
     height: fit-content;
     float:right;
+    width:50%;
+    word-wrap: break-word;
 }
 h2{
     color:blue;
@@ -85,8 +87,9 @@ h2{
     margin-right:10px;
 }
 p{
-    border:0px solid  white;
+    border:1px solid  white;
     display:inline-block;
+    width:50%;
     height: auto;
     color: rgb(3, 18, 1);
     color:white;
