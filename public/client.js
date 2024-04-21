@@ -4,7 +4,7 @@ let textArea = document.querySelector("#textarea");
 let messageArea= document.querySelector(".massage_area")
 let show_time = document.getElementById("show_time");
 let  d= new Date();
-show_time.innerHTML = d.toLocaleString();
+show_time.innerHTML = "<b style='color:black';> LIVE    from  </b>"+d.toLocaleString();
 
 do{
  Name=prompt("please Enter your name")
