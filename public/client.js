@@ -29,7 +29,7 @@ header.innerHTML =Name;
 textArea.addEventListener('keyup',(e)=>{
     if(e.key==='Enter'){
     sendmsg(e.target.value);
-    textArea.value=t;
+    textArea.value="";
     scroll();
     }
 })
