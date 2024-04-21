@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      form{
+        display: flex;
+        border: 0px solid black;
+        height:43vw;
+      }
+      .box{
+        border:0px solid black;
+        height:50%;
+        width: 50%;
+        margin: auto;
+        padding:3vw;
+        box-shadow: 1px 4px 19px rgb(0, 0, 0);
+        border-radius: .5rem;
+        transition: all 2s linear;
+        animation-name: box;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        background: linear-gradient(90deg in oklab, blue, red);
+      }
+   @keyframes box {
+    from {
+      transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+   }
+      h1{
+        text-align: center;
+        border:0px solid black;
+        font-size: 2vw;
+        text-shadow: 1px 2px 3px black;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        word-spacing: 4px;
+        color:rgb(255, 255, 255);
+      }
+      .text{
+        border:1px solid rgb(165, 165, 165);
+        display: block;
+        width:90%;
+        height:40%;
+        margin:auto;
+        font-size: 2vw;
+        padding-left:4vw;
+      }
+      .text:focus{
+        outline: 2px solid rgb(0, 244, 0);
+      }
+      .btn{
+          width:100%;
+          margin-top: 3vw;
+          font-size: 1.4vw;
+          padding:10px;
+          border:1px solid rgb(205, 204, 204);
+          border-radius:.5rem;
+          box-shadow: 1px 8px 3px grey;
+          background: rgb(197, 197, 255);
+      }
+      .btn:hover{
+        font-weight: 700;
+        background: rgb(0, 216, 0);
+        border:none;
+      }
+      p{
+        font-size: 1.4vw;
+        color:rgb(255, 0, 0);
+        font-weight: 900;
+        text-transform: capitalize;
+        text-shadow: 5px 2px 3px rgb(30, 26, 26);
+      }
+    </style>
+</head>
+<body>
+    <form onsubmit="return validateform()" action="http://localhost:3000/">
+        <div class="box">
+            <h1>
+                heyy Welcome ! 
+            </h1> 
+
+            <p id="error"></p>
+            <input type="text" class="text" placeholder=" Insert your name for Chat" id="text">
+            <input type="submit" value="Enter" class="btn">
+        </div>
+    </form>
+</body>
+<script src="client.js">
+
+</script>
+</html>

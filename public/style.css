@@ -1,0 +1,124 @@
+  
+body{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    min-height: 90vh;
+    background: rgb(165, 164, 164);
+}
+.box{
+    width:100%;
+    max-width: 90%;
+    box-shadow: 0px 10px 10px rgb(39, 34, 34);
+    border-radius: .6rem;
+    background: linear-gradient(#e66465, #9198e5);
+    margin: auto;
+    padding:3vw;
+    box-shadow: 1px 4px 19px rgb(0, 0, 0);
+    border-radius: .5rem;
+    transition: all 2s linear;
+    animation-name: box;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+@keyframes box {
+from {
+  transform: scale(0);
+}
+to{
+    transform: scale(1);
+}
+}
+.brand{
+    padding:10px;
+    background-color:#524e3975 ;
+    display:  flex;
+    align-items: center;
+}
+/* .brand img{
+    padding:20px;
+    margin-right: 10px;
+    border-radius: 50%;
+    height:5vh;
+    width:5vh;
+    border: 1px solid rgb(115, 115, 115);
+} */
+.brand h1{
+ text-transform: uppercase;
+ font-size: 20px;
+ color: rgb(0, 0, 0);
+ font-weight: 900;
+}
+.massage_area{
+    height: 370px;
+    padding:1rem;
+    display:flex;
+    flex-direction:column;
+    overflow-y: auto;
+    padding-top: 10px;
+    scrollbar-width: thin;
+}
+/* ::-webkit-scrollbar { 
+    width: 5px; 
+  }  */
+.massage_area .incoming{
+    border:0px solid rgb(255, 255, 255);
+}
+.massage_area .outgoing{
+    border:0px solid rgb(241, 236, 236);
+    position:relative;
+    height:auto;
+}
+.massage_area .outgoing h2{
+    border:0px solid rgb(241, 236, 236);
+    display:inline-block;
+    float:right;
+    padding:5px 10px;
+}
+.massage_area .outgoing p{
+    border:0px solid rgb(241, 236, 236);
+    display:inline-block;
+    margin-right:10px;
+    margin-top:17px;
+    height: fit-content;
+    float:right;
+}
+h2{
+    color:blue;
+    text-transform: uppercase;
+    text-shadow: 2px 1px 3px rgb(66, 66, 66);
+    letter-spacing: 1px;
+    margin-right:10px;
+}
+p{
+    border:0px solid  white;
+    display:inline-block;
+    height: auto;
+    color: rgb(3, 18, 1);
+    color:white;
+    font-weight:800;
+    padding:10px;
+    margin-left: 10px;
+    border-radius: 2px 12px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    margin-top:-5px;
+}
+.textarea{
+    width: 90%;
+    margin:20px;
+    font-size: 1.5rem;
+    letter-spacing:2px;
+    line-height: 18px;
+    border:none;
+    outline: none;
+    padding:12px;
+    padding-left:30px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    border-radius: 1rem;
+    padding-left:30px;
+}

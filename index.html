@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat_ App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+</style>
+<body onload="myTime()">
+<div class="box">
+   <section class="chat_section">
+    <div class="brand">
+        <!-- <img src="img.png"> -->
+        <h1 style="color:rgb(41, 178, 251)">Welcome <span  style="color: white; font-size:2rem; padding: 0 10px" id="header"></span> let's chat like a coder</h1>
+
+        <span style="margin-left:40%; color:rgb(33, 254, 8); font-size: 1.4vw; font-weight: 800; text-transform:capitalize; letter-spacing: 1px;" id="show_time"></span>
+    </div>
+    <div class="massage_area">  
+        <div class="incoming message">  
+            <h2 style="color:green"></h2> 
+            <p id="msg1" style="color:rgb(255, 250, 250)"></p>
+       </div> 
+       <!-- background:rgb(221, 255, 87) -->
+        <div class="outgoing message"> 
+            <h2></h2>
+            <p id="msg2"></p>
+        </div>
+
+    </div>
+    <input type="text" class="textarea" placeholder="Send a Message" id="textarea">
+</section>
+</div>   
+
+</body>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="client.js"></script>
+</html>
