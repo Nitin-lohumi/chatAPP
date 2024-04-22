@@ -7,7 +7,7 @@ let  d= new Date();
 show_time.innerHTML = "<b style='color:black';> LIVE    from  </b>"+d.toLocaleString();
 
 do{
- Name=prompt("please Enter your name")
+ Name=prompt("pehle NAAM BATAO ??")
 }while(!Name);
 function validateform(){
     let text = document.getElementById('text').value;
